@@ -29,6 +29,14 @@ header nav {
     text-align: center;
 }
 
+header nav span {
+    background-color: darkorange;
+    padding: 0.25rem 1rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
 header a {
     padding: 1rem;
     color: #eee;
