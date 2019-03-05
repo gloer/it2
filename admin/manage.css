@@ -1,0 +1,117 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #333;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+}
+
+header a {
+    padding: 1rem;
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+header img {
+    width: 90px;    
+}
+
+main {
+    
+    padding: 1rem;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+main article {
+    background-color: #222;    
+    padding: 2rem 1.5rem;
+    display:grid;
+}
+
+main article a {
+    color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#mineGamle > div {
+    color: #eee;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-gap: 1rem;
+    background-color: #666;    
+}
+
+#mineGamle > div:nth-child(odd) {
+    background-color: darkorange;
+}
+
+#mineGamle > div > * {
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+label {
+    color: #eee;
+}
+
+.big {
+    font-size: 2rem;
+}
+
+.small {
+    font-size: 1.25rem;
+    color: lightblue;
+}
+
+.right {
+    text-align: right;
+    color: orange;
+}
+
+#editor {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.klikkbar {
+    cursor: pointer;
+}
+
+.usynlig {
+    display: none !important;
+}
+
+a {
+    color: #eee;
+}
+
+a:hover {
+    color: yellow;
+}

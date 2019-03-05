@@ -1,0 +1,114 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #333;
+}
+
+header {
+    background-color: #333;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    text-align: center;
+}
+
+header a {
+    padding: 1rem;
+    color: #eee;
+    text-decoration: none;
+}
+
+header nav section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.25rem;
+    border: 1px solid #222;
+    background-color: #222;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    border-bottom: 2px solid orange;
+    
+}
+
+header nav section span {
+    background-color: purple;
+
+    color: lightblue;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header nav section h1 {
+    grid-column: span 2;
+    color: purple;
+    cursor: pointer;
+}
+
+header img {
+    width: 90px;    
+}
+
+main {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    background-color: #333;
+}
+
+main article {
+    background-color: #222;    
+    padding: 2rem 1.5rem;
+    display:grid;
+}
+
+main article a {
+    color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+main img {
+    width: 80px;
+    border-radius: 50%;
+    
+}
+
+.big {
+    font-size: 2rem;
+}
+
+.small {
+    font-size: 1.25rem;
+    color: lightblue;
+}
+
+.right {
+    text-align: right;
+    color: orange;
+}

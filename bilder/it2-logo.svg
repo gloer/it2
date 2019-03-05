@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="449px" viewBox="0 0 400 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-30.000000, -2.000000)">
+            <path d="M237.908174,4.49630702 L421.094017,108.649275 C426.096113,111.493289 429.185843,116.804217 429.185843,122.558293 L429.185843,330.441707 C429.185843,336.195783 426.096113,341.506711 421.094017,344.350725 L237.908174,448.503693 C233.004639,451.291669 226.995361,451.291669 222.091826,448.503693 L38.9059832,344.350725 C33.9038867,341.506711 30.8141571,336.195783 30.8141571,330.441707 L30.8141571,122.558293 C30.8141571,116.804217 33.9038867,111.493289 38.9059832,108.649275 L222.091826,4.49630702 C226.995361,1.70833114 233.004639,1.70833114 237.908174,4.49630702 Z" id="Polygon" fill="#7FC809"></path>
+            <text id="it2" font-family="AcierBATText-Gris, Acier BAT" font-size="247" font-weight="normal" fill="#45483B">
+                <tspan x="79" y="254">it2</tspan>
+            </text>
+            <text id="Eksamen" font-family="AcierBATText-Gris, Acier BAT" font-size="96" font-weight="normal" fill="#FFFFF9">
+                <tspan x="43" y="322">Eksamen</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

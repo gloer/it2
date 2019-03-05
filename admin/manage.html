@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mine løsningsforslag</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css">
+    <link rel="stylesheet" href="./manage.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../bilder/it2-logo.svg"></a>        
+    </header>
+
+    <main>
+        <div>        
+            <form id="skjemaProsjekt">
+                <h1>Registrer et nytt løsningsforslag</h1>
+                <label>Velg år</label>
+                <select id="selAar" required>
+                    <option data-aar="2018" data-maaned="H" value="H-2018" data-tittel="Ferie og fritid">H-2018</option>
+                    <option data-aar="2018" data-maaned="V" value="V-2018" data-tittel="Publikumsapplikasjon for Ringve musikkhistoriske museum">V-2018</option>
+                    <option data-aar="2017" data-maaned="H" value="H-2017" data-tittel="Skolevalg">H-2017</option>
+                    <option data-aar="2017" data-maaned="V" value="V-2017" data-tittel="Fornybar energi - vindkraft">V-2017</option>
+                    <option data-aar="2016" data-maaned="H" value="H-2016" data-tittel="Middagsbestillinger - Fra fjord til bord">H-2016</option>
+                    <option data-aar="2016" data-maaned="V" value="V-2016" data-tittel="Animasjon, språktest og bestillinger">V-2016</option>
+                    <option data-aar="2015" data-maaned="H" value="H-2015" data-tittel="Applikasjoner til et nettsted for lektorstudier ved NTNU">H-2015</option>
+                    <option data-aar="2015" data-maaned="V" value="V-2015" data-tittel="Østfold på hjul – planleggingsverktøy for sykkelferie">V-2015</option>
+                    <option data-aar="2014" data-maaned="H" value="H-2014" data-tittel="Bilpresentasjoner">H-2014</option>
+                    <option data-aar="2014" data-maaned="V" value="V-2014" data-tittel="Trafikksikkerhet">V-2014</option>
+                    <option data-aar="2013" data-maaned="H" value="H-2013" data-tittel="Fugler">H-2013</option>
+                    <option data-aar="2013" data-maaned="V" value="V-2013" data-tittel="Fysisk aktivitet og energiforbruk">V-2013</option>
+                    <option data-aar="2012" data-maaned="H" value="H-2012" data-tittel="Applikasjoner til konkurranser i tv-programmer">H-2012</option>
+                    <option data-aar="2012" data-maaned="V" value="V-2012" data-tittel="Applikasjoner til nettsted om OL i London 2012">V-2012</option>
+                    <option data-aar="2011" data-maaned="H" value="H-2011" data-tittel="Bildegjenkjenning">H-2011</option>
+                    <option data-aar="2011" data-maaned="V" value="V-2011" data-tittel="Økosystemer – naturen i endring">V-2011</option>
+                    <option data-aar="2010" data-maaned="H" value="H-2010" data-tittel="Høyfjellshoteller">H-2010</option>
+                    <option data-aar="2010" data-maaned="V" value="V-2010" data-tittel="Flyklubb">V-2010</option>
+                    <option data-aar="2009" data-maaned="H" value="H-2009" data-tittel="Nettsted - Sjøliv i Grenland">H-2009</option>
+                    <option data-aar="2009" data-maaned="V" value="V-2009" data-tittel="Stortingsvalget 2009">V-2009</option>
+                    <option data-aar="2008" data-maaned="V" value="V-2008" data-tittel="Klesbutikk">V-2008</option>                
+                </select>
+                <label>Tittel på ditt løsningsforslag</label>
+                <input id="inpTittel" type="text" required placeholder="Ferie og fritid">
+                <label>URL til ditt løsningsforslag</label>
+                <input id="inpURL" type="url" required placeholder="https://github.com/gloer/it2-h2018">
+                <label>Beskrivelse av ditt løsningsforslag</label>
+                <div id="editor"></div>
+                <button id="btnSubmit" type="submit" class="button expanded">Lagre dette løsningsforslaget</button>    
+            </form>
+            <button id="btnEdit" class="button success expanded usynlig">Endre dette løsningsforslaget</button>
+        </div>
+        
+        <section>
+            <h1>Mine løsningsforslag</h1>
+            <label>Du kan endre eller slette dine gamle løsningsforslag</label>
+            <div id="mineGamle">
+                             
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/balloon/ckeditor.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyChMT4qclDtD8R2Snuu6WFXZtL0TjlOxUY",
+        authDomain: "it2-eksamen.firebaseapp.com",
+        databaseURL: "https://it2-eksamen.firebaseio.com",
+        projectId: "it2-eksamen",
+        storageBucket: "",
+        messagingSenderId: "877711675855"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="./manage.js"></script>
+</body>
+</html>
