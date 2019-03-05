@@ -35,6 +35,7 @@ header nav span {
     color: white;
     border: 2px solid white;
     border-radius: 3px;
+    text-shadow: 1px 1px 1px black;
 }
 
 header a {
