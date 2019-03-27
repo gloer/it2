@@ -14,8 +14,10 @@ function visForslag(snap) {
                 <p class="big">${data.tittel}</p>
                 <p class="small">løst av</p>
                 <p class="big">${data.forfatter}</p>
-                <p class="small right">Les mer</p>
-                <img src="${data.userphoto}">
+                <footer>
+                    <img src="${data.userphoto}">
+                    <p class="small right">Les mer</p>
+                </footer>        
             </a>
         </article>
     ` + main.innerHTML;

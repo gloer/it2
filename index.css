@@ -84,7 +84,7 @@ main {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #333;
 }
 
@@ -99,7 +99,20 @@ main article a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
+    display: grid;
+}
+
+main article footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1.25rem;
+    align-self: end;
+    
+}
+
+main article footer .right {    
+    align-self: end;
 }
 
 main img {
@@ -109,7 +122,7 @@ main img {
 }
 
 .big {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .small {
@@ -120,4 +133,22 @@ main img {
 .right {
     text-align: right;
     color: orange;
+}
+
+@media (max-width: 1300px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1040px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
